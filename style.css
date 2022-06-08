@@ -1,9 +1,11 @@
 html,
 body {
+  /* scroll-behavior: smooth; */
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 section {
   background-color: white;
@@ -77,6 +79,19 @@ p {
   margin-bottom: 200px;
 }
 
+@media only screen and (max-width: 376px) {
+  .hero-text h1 {
+    margin-left: -35px;
+    margin-bottom: 45px;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .hero-text h1 {
+    margin-left: -63px;
+    margin-bottom: 45px;
+  }
+}
+
 .button {
   width: 200px;
   height: 55px;
@@ -89,6 +104,13 @@ p {
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 426px) {
+  .button {
+    margin-top: 100px;
+    margin-left: -20px;
+  }
+}
+
 .button:hover {
   background-color: #ef744b;
 }
@@ -99,10 +121,7 @@ p {
 }
 
 .socials {
-  padding-bottom: 200px;
-
-  /* position: absolute; */
-  /* justify-content: space-between; */
+  padding-bottom: 135px;
 }
 
 .logo {
@@ -110,7 +129,7 @@ p {
   margin: 30px;
 }
 .social {
-  margin: 20px;
+  margin-left: -60px;
 }
 
 .sub-section {
@@ -127,14 +146,16 @@ p {
 }
 
 .headshot {
+  display: flex;
   width: 300px;
   border-radius: 150px;
-  margin-left: 80px;
+  float: right;
 }
 
-.headshot-container {
-  display: flex;
-  align-items: center;
+@media only screen and (max-width: 426px) {
+  .headshot {
+    margin-top: 45px;
+  }
 }
 
 .project-card {
