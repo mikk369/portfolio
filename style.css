@@ -233,3 +233,9 @@ a {
     /* flex-direction: column-reverse; */
   }
 }
+
+@media only screen and (max-width: 321px) {
+  #contact-me p {
+    font-size: 25px;
+  }
+}
